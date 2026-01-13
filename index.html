@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App with Levels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+
+    <div id="level-box">
+        <h1>Choose Difficulty</h1>
+        <button class="level easy">Easy</button>
+        <button class="level medium">Medium</button>
+        <button class="level hard">Hard</button>
+    </div>
+
+
+    <div id="quiz-box" class="hide">
+        <h2 id="question">Question goes here</h2>
+
+        <div id="answers">
+            <button>Answer 1</button>
+            <button>Answer 2</button>
+            <button>Answer 3</button>
+            <button>Answer 4</button>
+        </div>
+
+        <button id="next-btn">Next Question</button>
+    </div>
+
+
+    <div id="result" class="hide">
+        <h2>Quiz Finished 🎉</h2>
+        <p>Your Score: <span id="final-score">0</span></p>
+        <button onclick="location.reload()">Restart</button>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
